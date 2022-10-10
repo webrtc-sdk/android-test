@@ -6,7 +6,7 @@ VERSION=104.5112.01
 
 RELEASE_VERSION=${VERSION}
 
-SDK_BIN_URL=https://github.com/webrtc-sdk/android/releases/download/${VERSION}/libwebrtc.aar
+SDK_BIN_URL=https://github.com/webrtc-sdk/android-test/releases/download/${VERSION}/libwebrtc.aar
 
 BUILD_DIR=build
 mkdir -p ${BUILD_DIR}
@@ -20,4 +20,4 @@ mvn install:install-file \
     -Dpackaging=aar \
     -Dversion=${RELEASE_VERSION} \
     -DgroupId=com.github.webrtc-sdk \
-    -DartifactId=android
+    -DartifactId=android-test
